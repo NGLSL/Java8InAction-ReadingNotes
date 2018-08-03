@@ -1,13 +1,13 @@
-package xin.codedream.java8.chap1;
+package xin.codedream.java8.chap2;
 
 /**
  * 苹果
  *
  * @author NGLSL
- * @date 2018/7/20
+ * @date 2018/8/2
  */
 public class Apple {
-    private int weight;
+    private Integer weight;
     private String color;
 
     public Apple(int weight, String color) {
@@ -15,11 +15,11 @@ public class Apple {
         this.color = color;
     }
 
-    public int getWeight() {
+    public Integer getWeight() {
         return weight;
     }
 
-    public void setWeight(int weight) {
+    public void setWeight(Integer weight) {
         this.weight = weight;
     }
 

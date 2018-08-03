@@ -1,4 +1,4 @@
-package xin.codedream.java8.chap1;
+package xin.codedream.java8.chap2;
 
 import java.util.ArrayList;
 import java.util.Arrays;

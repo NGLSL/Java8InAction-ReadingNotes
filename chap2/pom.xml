@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>xin.codedream.java8</groupId>
-    <artifactId>chap1</artifactId>
+    <artifactId>chap2</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
