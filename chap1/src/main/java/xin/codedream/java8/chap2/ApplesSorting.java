@@ -11,7 +11,7 @@ import java.util.List;
  * @author NGLSL
  * @date 2018/7/20
  */
-public class ApplesSort {
+public class ApplesSorting {
 
     private static List<Apple> apples = Arrays.asList(new Apple(100, "red"), new Apple(101, "green")
             , new Apple(132, "green"), new Apple(90, "green"), new Apple(122, "red")
