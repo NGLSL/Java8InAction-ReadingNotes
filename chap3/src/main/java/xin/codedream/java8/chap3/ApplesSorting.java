@@ -26,6 +26,6 @@ public class ApplesSorting {
         Comparator<Apple> byWeight2 = (Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight());
         Comparator<Apple> byWeight3 = Comparator.comparing(Apple::getWeight);
         // apples.sort(byWeight2);
-        // apples.sort(byWeight3);
+        apples.sort(byWeight3);
     }
 }

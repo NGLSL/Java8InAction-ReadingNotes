@@ -22,6 +22,31 @@ public class LambdaExample {
 
         List<Apple> heavyApples = filter(apples, (Apple apple) -> apple.getWeight() > 150);
         System.out.println(heavyApples);
+
+        // 使用Lambda表达式
+        Runnable r1 = () -> System.out.println("HelloWorld 1");
+
+        // 使用匿名类
+        Runnable r2 = new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("HelloWorld 2");
+            }
+        };
+
+        // 运行结果
+        System.out.println("Runnable运行结果：");
+        // HelloWorld 1
+        process(r1);
+        // HelloWorld 2
+        process(r2);
+        // HelloWorld 3
+        process(() -> System.out.println("HelloWorld 3"));
+    }
+
+
+    private static void process(Runnable r) {
+        r.run();
     }
 
     private static <T> List<T> filter(List<T> list, Predicate<T> predicate) {
