@@ -42,6 +42,12 @@ public class LambdaExample {
         process(r2);
         // HelloWorld 3
         process(() -> System.out.println("HelloWorld 3"));
+
+        // 使用Predicate
+        List<String> strings = Arrays.asList("Hello", "", "Java8", "", "In", "Action");
+        Predicate<String> nonEmptyStringPredicate = (String s) -> !s.isEmpty();
+        List<String> stringList = filter(strings, nonEmptyStringPredicate);
+        System.out.println(stringList);
     }
 
 
