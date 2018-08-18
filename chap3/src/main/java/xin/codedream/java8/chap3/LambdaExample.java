@@ -25,6 +25,18 @@ public class LambdaExample {
         apples.sort((Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight()));
         // 之后，方法引用
         apples.sort(Comparator.comparing(Apple::getWeight));
+
+        // 使用Supplier来构建一个对象
+        Supplier<Apple> c1 = Apple::new;
+        Apple apple = c1.get();
+
+        // 使用Function
+        Function<Integer, Apple> c2 = Apple::new;
+        Apple a2 = c2.apply(120);
+        
+        // 使用BiFunction
+        BiFunction<Integer, String, Apple> c3 = Apple::new;
+        Apple a3 = c3.apply(120, "red");
     }
 
     private static void demo1(List<Apple> apples) {
