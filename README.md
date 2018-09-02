@@ -10,6 +10,7 @@
 - chap2：[行为参数化，谓词的使用](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap2)
 - chap3：[Lambda表达式、函数式接口、类型推断、方法引用、Lambda表达式结合默认方法使用](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap3)
 - chap4：[Stream的使用、中间操作、终端操作](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap4)
+- chap5：[flatMap、findAny、findFirst、Reduce的使用](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap5)
 ### 公众号
 如果，您觉得每次打开博客或者社区不方便，可以关注我的微信公众号非常感谢！
 
