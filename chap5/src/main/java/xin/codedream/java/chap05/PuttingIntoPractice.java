@@ -46,5 +46,18 @@ public class PuttingIntoPractice {
                 // 将Stream中所有的元素转为一个List集合
                 .collect(Collectors.toList());
         System.out.println(cities);
+
+        // 3.查找所有来自于剑桥的交易员，并按姓名排序。
+        List<Trader> traders = transactions.stream()
+                // 从交易中提取所有的交易员
+                .map(Transaction::getTrader)
+                // 进选择位于剑桥的交易员
+                .filter(trader -> "Cambridge".equals(trader.getCity()))
+                // 确保没有重复
+                .distinct()
+                // 对生成的交易员流按照姓名进行排序
+                .sorted(Comparator.comparing(Trader::getName))
+                .collect(Collectors.toList());
+        System.out.println(traders);
     }
 }
