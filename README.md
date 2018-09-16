@@ -11,6 +11,7 @@
 - chap3：[Lambda表达式、函数式接口、类型推断、方法引用、Lambda表达式结合默认方法使用](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap3)
 - chap4：[Stream的使用、中间操作、终端操作](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap4)
 - chap5：[flatMap（扁平化流）、findAny、findFirst、Reduce、数值流、构建流、无限流的使用](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap5)
+- chap6：[使用流收据数据](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap6)
 ### 公众号
 如果，您觉得每次打开博客或者社区不方便，可以关注我的微信公众号非常感谢！
 
