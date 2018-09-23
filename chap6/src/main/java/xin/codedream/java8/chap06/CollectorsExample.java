@@ -1,6 +1,8 @@
 package xin.codedream.java8.chap06;
 
 import java.util.*;
+import java.util.function.Predicate;
+import java.util.stream.IntStream;
 
 import static java.util.Comparator.comparingInt;
 import static java.util.stream.Collectors.*;
@@ -21,6 +23,38 @@ public class CollectorsExample {
         reducingExample();
         groupingByExample();
         groupingByExample2();
+        partitioningByExample();
+    }
+
+    private static void partitioningByExample() {
+        // 分区函数
+        List<Dish> menu = Dish.MENU;
+        Map<Boolean, List<Dish>> partitionedMenu =
+                menu.stream().collect(partitioningBy(Dish::isVegetarian));
+        System.out.println(partitionedMenu);
+
+        // 找出素食
+        List<Dish> vegetarianDishes = partitionedMenu.get(true);
+        System.out.println(vegetarianDishes);
+
+        Map<Boolean, Map<Dish.Type, List<Dish>>> vegetarianDishesByType =
+                menu.stream().collect(
+                        // 分区函数
+                        partitioningBy(Dish::isVegetarian,
+                                // 第二个收集器
+                                groupingBy(Dish::getType)));
+        System.out.println(vegetarianDishesByType);
+
+        // 找到素食和非素食中热量最高的菜
+        Map<Boolean, Dish> mostCaloricPartitionedByVegetarian = menu.stream().collect(
+                partitioningBy(Dish::isVegetarian, collectingAndThen(
+                        maxBy(comparingInt(Dish::getCalories)),
+                        Optional::get
+                )));
+        System.out.println(mostCaloricPartitionedByVegetarian);
+
+        Map<Boolean, List<Integer>> partitionPrimes = partitionPrimes(10);
+        System.out.println(partitionPrimes);
     }
 
     private static void groupingByExample2() {
@@ -171,5 +205,35 @@ public class CollectorsExample {
         Optional<Dish> mostCalorieDish =
                 menu.stream().max(dishCaloriesComparator);
         System.out.println(mostCalorieDish.get());
+    }
+
+    private static boolean isPrime(int candidate) {
+        int candidateRoot = (int) Math.sqrt((double) candidate);
+        return IntStream.rangeClosed(2, candidateRoot)
+                .noneMatch(i -> candidate % i == 0);
+    }
+
+    public static Map<Boolean, List<Integer>> partitionPrimes(int n) {
+        return IntStream.rangeClosed(2, n).boxed()
+                .collect(
+                        partitioningBy(candidate -> isPrime(candidate)));
+    }
+
+    public static boolean isPrime(List<Integer> primes, Integer candidate){
+        int candidateRoot = (int) Math.sqrt((double) candidate);
+        return takeWhile(primes, i -> i <= candidateRoot)
+                .stream()
+                .noneMatch(p -> candidate % p == 0);
+    }
+
+    public static <A> List<A> takeWhile(List<A> list, Predicate<A> p) {
+        int i = 0;
+        for (A item : list) {
+            if (!p.test(item)) {
+                return list.subList(0, i);
+            }
+            i++;
+        }
+        return list;
     }
 }
