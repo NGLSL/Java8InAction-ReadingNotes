@@ -5,14 +5,16 @@
 - Github：[https://github.com/NGLSL](https://github.com/NGLSL)
 - Gitee：[https://gitee.com/nglsl666](https://gitee.com/nglsl666/)
 
-### 读书笔记代码目录概览
+## 读书笔记代码目录概览
 - chap1：[Lambda表达式、Stream、默认方法的使用](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap1)
 - chap2：[行为参数化，谓词的使用](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap2)
 - chap3：[Lambda表达式、函数式接口、类型推断、方法引用、Lambda表达式结合默认方法使用](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap3)
 - chap4：[Stream的使用、中间操作、终端操作](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap4)
 - chap5：[flatMap（扁平化流）、findAny、findFirst、Reduce、数值流、构建流、无限流的使用](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap5)
 - chap6：[使用流收据数据](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap6)
-### 公众号
+- chap7：[并行流](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap7)
+
+## 公众号
 如果，您觉得每次打开博客或者社区不方便，可以关注我的微信公众号非常感谢！
 
-![](https://codedream-blog.oss-cn-beijing.aliyuncs.com/upload/2018/07/201807222157052797841.jpg)
+![image](https://codedream-blog.oss-cn-beijing.aliyuncs.com/upload/2018/07/201807222157052797841.jpg)
