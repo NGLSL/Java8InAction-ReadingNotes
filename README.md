@@ -13,6 +13,7 @@
 - chap5：[flatMap（扁平化流）、findAny、findFirst、Reduce、数值流、构建流、无限流的使用](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap5)
 - chap6：[使用流收据数据](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap6)
 - chap7：[并行流](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap7)
+- chap8：[重构、测试和调试](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap8)
 
 ## 公众号
 如果，您觉得每次打开博客或者社区不方便，可以关注我的微信公众号非常感谢！
