@@ -37,5 +37,6 @@
         <module>chap6</module>
         <module>chap7</module>
         <module>chap8</module>
+        <module>chap9</module>
     </modules>
 </project>
