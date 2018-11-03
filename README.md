@@ -15,6 +15,7 @@
 - chap7：[并行流](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap7)
 - chap8：[重构、测试和调试](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap8)
 - chap9：[默认方法](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap9)
+- chap10：[使用Optional代替null](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap10)
 
 ## 公众号
 如果，您觉得每次打开博客或者社区不方便，可以关注我的微信公众号非常感谢！
