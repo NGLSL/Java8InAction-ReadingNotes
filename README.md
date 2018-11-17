@@ -19,9 +19,10 @@
 - chap9：[默认方法](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap9)
 - chap10：[使用Optional代替null](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap10)
 - chap11：[CompletableFuture：组合式异步编程](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap11)
+- chap12：[新的日期和时间API](https://github.com/NGLSL/Java8InAction-ReadingNotes/tree/master/chap12)
 
 ## 公众号
 
-如果，您觉得每次打开博客或者社区不方便，可以关注我的微信公众号非常感谢！
+欢迎大家关注我的公众号
 
 ![image](https://codedream-blog.oss-cn-beijing.aliyuncs.com/upload/2018/07/201807222157052797841.jpg)
