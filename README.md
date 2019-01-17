@@ -2,7 +2,7 @@
 
 里面包含了博客文章中的示例代码，您可将代码Clone下来，作为阅读文章的参考。如果，代码中有误，可以提交issues，非常感谢!
 
-- 我的博客：[http://codedream.xin](http://www.codedream.xin)
+- 我的博客：[http://www.codedream.xin](http://www.codedream.xin)
 - Github：[https://github.com/NGLSL](https://github.com/NGLSL)
 - Gitee：[https://gitee.com/nglsl666](https://gitee.com/nglsl666/)
 
